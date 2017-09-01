@@ -29,4 +29,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.qmuiteam:qmui:1.0.0'
     compile project(':basic_sdk')
+    //    compile 'tyrantgit:explosionfield:1.0.1'
+    compile 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile project(':component_sdk')
+    compile project(':animation_sdk')
 }

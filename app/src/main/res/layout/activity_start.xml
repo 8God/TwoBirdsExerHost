@@ -1,19 +1,28 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_start_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/qmui_config_color_white">
+    android:background="@color/colorPrimary">
 
-  <com.qmuiteam.qmui.widget.QMUITopBar
-      android:layout_width="match_parent"
-      android:layout_height="?attr/qmui_topbar_height" />
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:background="@color/qmui_config_color_white"
-      android:gravity="center"
-      android:padding="30dp"
-      android:text="QMUI"/>
-</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_start_page_ring"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_white_circle"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_start_page_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/start_page_app_name"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
